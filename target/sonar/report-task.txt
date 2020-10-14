@@ -2,5 +2,5 @@ projectKey=com.tutorial.app:tutorialapp
 serverUrl=http://192.168.1.130:9000
 serverVersion=8.1.0.31237
 dashboardUrl=http://192.168.1.130:9000/dashboard?id=com.tutorial.app%3Atutorialapp
-ceTaskId=AXUloO8xxak41FuxKsE1
-ceTaskUrl=http://192.168.1.130:9000/api/ce/task?id=AXUloO8xxak41FuxKsE1
+ceTaskId=AXUlpGAdxak41FuxKsE3
+ceTaskUrl=http://192.168.1.130:9000/api/ce/task?id=AXUlpGAdxak41FuxKsE3
