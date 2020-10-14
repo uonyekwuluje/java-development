@@ -6,8 +6,13 @@ package com.tutorial.app;
  */
 public class App 
 {
-    public static void main( String[] args )
+    static void myMethod() {
+      System.out.println("Hello World. This is Develop");
+    }
+
+    public static void main(String[] args)
     {
-        System.out.println( "Hello World!" );
+        System.out.println("Hello World!");
+        myMethod();
     }
 }
