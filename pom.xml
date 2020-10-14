@@ -20,7 +20,7 @@
     <sonar.host.url>http://192.168.1.130:9000</sonar.host.url>
     <sonar.login>77735d7e883229a4b277936dddfa9871a794bb86</sonar.login>
     <sonar.projectName>tutorialapp</sonar.projectName>
-    <sonar.projectVersion>develop</sonar.projectVersion>
+    <sonar.projectVersion>master</sonar.projectVersion>
     <sonar.test.exclusions>**/test/**/*.*</sonar.test.exclusions>
     <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*</sonar.exclusions>
   </properties>
