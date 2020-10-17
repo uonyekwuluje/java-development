@@ -29,7 +29,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>com.javaconcepts.app.App</mainClass>
+                        <mainClass>com.javaconcepts.app.Intro</mainClass>
                     </manifest>
                 </archive>
                 <descriptorRefs>
