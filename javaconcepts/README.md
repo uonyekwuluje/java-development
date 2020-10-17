@@ -13,3 +13,27 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -Darchety
 mvn clean install assembly:single
 java -jar target/javaconcepts-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
+
+## Code Structure
+```
+.
+├── pom.xml
+├── README.md
+└── src
+    ├── main
+    │   └── java
+    │       └── com
+    │           └── javaconcepts
+    │               └── app
+    │                   ├── Intro.java
+    │                   └── PrintDisplay.java
+    └── test
+        └── java
+            └── com
+                └── javaconcepts
+                    └── app
+                        └── AppTest.java
+
+11 directories, 5 files
+
+```
