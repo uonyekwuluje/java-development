@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class TestCode {
     public static void main(String[] args){
+        final int RADUS = 23; 
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a Number: ");
         int num1 = input.nextInt();
