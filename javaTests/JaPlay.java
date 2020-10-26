@@ -1,16 +1,27 @@
-import java.util.Scanner;
-
 public class JaPlay {
    public static void main(String[] args){
-      Scanner tinput = new Scanner(System.in);
+       Circle circle1 = new Circle();
+       System.out.println("Area of Circle of radius "+ circle1.radius + " is " + circle1.getArea());
 
-      String fullName = "Uchechukwu Onyekwuluje";
-      int[][] newt = {{2,3},{6,1},{8,4}};
-      for (int row = 0; row <= newt.length - 1; row++){
-         for (int col = 0; col <= newt[0].length -1; col++){
-              System.out.print(newt[row][col]);
-          }
-          System.out.println("");
-      }
+       Circle circle2 = new Circle(25);
+       System.out.println("Area of Circle of radius "+ circle2.radius + " is " + circle2.getArea());
+
+   }
+}
+
+class Circle {
+   double radius;
+
+   Circle() {  
+      radius = 1;
+   }
+
+   Circle(double newRadius) {
+      radius = newRadius;
+   }
+
+
+   double getArea(){
+      return radius * radius * Math.PI;
    }
 }
