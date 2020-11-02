@@ -8,6 +8,7 @@ public class TestStrings{
        System.out.println(nstring);
        concatstring(str1,str2);
        indexstring(str1,str2);
+       casestring(str1);
    }
 
    public static void concatstring(String ar1, String ar2){
@@ -26,5 +27,12 @@ public class TestStrings{
        System.out.println("Full name => "+ar3.charAt(5));
        System.out.println("Lenght of String => "+ar4.indexOf('R'));
    }
+
+   public static void casestring(String ar1){
+       System.out.println("\nTesting Case String\n----------------------------");
+       System.out.println("Upper Case => "+ar1.toUpperCase());
+       System.out.println("Lower Case => "+ar1.toLowerCase());
+   }
+
 
 }
