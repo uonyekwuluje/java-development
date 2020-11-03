@@ -8,8 +8,8 @@ public class BubbleSort{
    }
 
    public static int[] bubbleSort(int[] numArg){
-      for(int x = 0; x < numArg.length; x++) {
-         for(int y = 0; y < numArg.length -1; y++) {
+      for(int x = 0; x < numArg.length - 1; x++) {
+         for(int y = 0; y < numArg.length - x -1; y++) {
             if (numArg[y] > numArg[y+1]){
                int temp = numArg[y];
                numArg[y] = numArg[y+1];
@@ -19,6 +19,5 @@ public class BubbleSort{
       }
       return numArg;
    }
-
 
 }
