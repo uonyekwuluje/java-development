@@ -4,3 +4,4 @@
 
 # Algorithms
 * [Linear Search](linear_search)
+* [Bubble_Sort](bubble_sort)
