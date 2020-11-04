@@ -1,7 +1,5 @@
-# This is list of programming challenges.
+# This is list of programming challenges and algorithms.
 * [Sum of Two](sum_of_two)
-
-
-# Algorithms
 * [Linear Search](linear_search)
 * [Bubble_Sort](bubble_sort)
+* [Reverse Integer](reverse_integer)
