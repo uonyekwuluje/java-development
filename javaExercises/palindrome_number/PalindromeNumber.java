@@ -1,4 +1,5 @@
 // https://coderscat.com/leetcode-palindrome-number
+// https://www.programiz.com/java-programming/examples/palindrome-number
 public class PalindromeNumber{
     public static void main(String[] args){
        int num = -121;
