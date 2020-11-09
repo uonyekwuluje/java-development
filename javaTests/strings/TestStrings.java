@@ -9,6 +9,7 @@ public class TestStrings{
        concatstring(str1,str2);
        indexstring(str1,str2);
        casestring(str1);
+       testsubstring(str2);
    }
 
    public static void concatstring(String ar1, String ar2){
@@ -33,6 +34,12 @@ public class TestStrings{
        System.out.println("Upper Case => "+ar1.toUpperCase());
        System.out.println("Lower Case => "+ar1.toLowerCase());
    }
+
+   public static void testsubstring(String ar1){
+       System.out.println("\nTesting SubString\n----------------------------");
+       System.out.println("Substring => "+ar1.substring(2,4));
+   }
+
 
 
 }
