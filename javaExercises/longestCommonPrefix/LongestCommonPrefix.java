@@ -4,10 +4,11 @@ public class LongestCommonPrefix {
    public static void main(String[] args){
       Solution newSoln = new Solution();
       //String[] strArry = {"flower","flower","flower","flower"};
-      //String[] strArry = {"flower","flow","flight"};
-      String[] strArry = {"aa"};
+      String[] strArry = {"flower","flow","flight"};
+      //String[] strArry = {"aa"};
       //String[] strArry = {"flower","flow","flight","fiorena","floresence","fillabuster"};
-      System.out.println(newSoln.longestCommonPrefix(strArry));
+      System.out.println("Array => "+Arrays.toString(strArry));
+      System.out.println("LongestPrefix => "+newSoln.longestCommonPrefix(strArry));
    }
 }
 
@@ -40,31 +41,32 @@ class Solution {
          }
        }
 
-       char[] tmpChar = new char[strs.length];
-       String[] tmpChar2 = new String[strs.length];
-       boolean isFound = true;
-       int count = 0;
-       String foundString = "";
- 
-       for (int y = 0; y < shortString.length();y++){
-         for (int xsub = 0; xsub < strs.length; xsub++){
-           tmpChar[xsub] = strs[xsub].charAt(y);   
-         }
-         for (int ysub = 1; ysub <= tmpChar.length -1; ysub++){
-           if (tmpChar[ysub] != tmpChar[ysub-1]){
-             isFound = false;
-             break;
-           }
-           foundString = String.valueOf(tmpChar[0]); 
-         }
+       boolean isFound = false;
+       String newString = "";
+       String currString = "";
 
+      newString = currString;
+      //System.out.println("Longest String in Array => "+longString);
+      //System.out.println("Shortest String in Array => "+shortString);
+      for (int x = 0; x <= shortString.length()-1; x++) {
+         currString = shortString.substring(0,x+1);
+         //System.out.println("String Index => "+currString);
+         for (int y=0; y <=strs.length -1; y++){ 
+            String ts = strs[y].substring(0,x+1);
+            //System.out.println("DEBUG Index "+strs[y].substring(0,x+1));
+            //if (currString != strs[y].substring(0,x+1)){
+                 System.out.println(currString+" == "+strs[y].substring(0,x+1)+" => "+(currString == ts));
+                 //isFound = true;
+                 //break;
+            //}
+         }
          if (isFound){
-          tmpChar2[count] = foundString;
-          count++;
-        } 
-
-       }
-       
-    return tmpChar2.toLowerCase().trim();
+           return newString;
+         }else{
+           newString = currString;
+         }
+         isFound = false;
+      }
+    return newString;
     }
 }
