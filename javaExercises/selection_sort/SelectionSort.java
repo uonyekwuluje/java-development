@@ -3,39 +3,28 @@ import java.util.concurrent.TimeUnit;
 
 public class SelectionSort{
    public static void main(String[] args){
-       int[] nums = {6,5,3,11,8,7,2,1,9,4,13,-3,12,0};
+       int[] nums = {6,5,3,31,8,7,2,1,9,4,13,12,0};
        System.out.println("Unsorted Array => "+Arrays.toString(nums));
-       //smallest1(nums);
-       smallest2(nums);
+       sortImplement(nums);
    }
 
-
-   public static void smallest1(int[] intarg){
-       int temp = 0;
-       for (int x = 0; x < intarg.length; x++) {
-         for (int y = x+1; y < intarg.length; y++) {
-            if (intarg[x] > intarg[y]) {
-               temp = intarg[x];
-               intarg[x] = intarg[y];
-               intarg[y] = temp;
-            }
+   public static void sortImplement(int[] intarg){
+       try {
+         for (int x = 0; x < intarg.length - 1; x++) {
+           int index = x;
+           for (int y = x+1; y < intarg.length; y++) {
+               if (intarg[y] < intarg[index]) {
+                  index = y;
+               }
+           } 
+           int smallest = intarg[index];
+           intarg[index] = intarg[x];
+           intarg[x] = smallest;
+           TimeUnit.SECONDS.sleep(1); 
+           System.out.println("Sorted "+Arrays.toString(intarg));      
          }
+       } catch (InterruptedException e) {
+           System.err.format("IOException: %s%n", e);
        }
-       System.out.println("The Smallest value "+intarg[0]);
-   }
-
-
-   public static void smallest2(int[] intarg){
-       int smallest = 0;
-       int largest = 0;
-       for (int x = 0; x < intarg.length; x++) {
-           if (intarg[x] < smallest) {
-             smallest = intarg[x];
-           } else if (intarg[x] > largest){  
-             largest = intarg[x];
-           }      
-       }
-       System.out.println("The Smallest value "+smallest);
-       System.out.println("The Largest value "+largest);
    }
 }
