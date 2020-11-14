@@ -4,11 +4,15 @@ import java.util.concurrent.TimeUnit;
 public class BinarySearch{
    public static void main(String[] args){
        int[] nums = {6,5,3,31,8,7,2,1,9,4,13,12,0};
-       int searchItem = 12;
+       int searchItem = 7;
        System.out.println("Unsorted Array => "+Arrays.toString(nums));
        int[] sortedList = sortImplement(nums);
        System.out.println("Sorted Array => "+Arrays.toString(sortedList));
-       System.out.println("Item ["+searchItem+"] is in Index => "+search(sortedList,searchItem));
+       if (search(sortedList,searchItem) == -1){
+          System.out.println("Requested Item ["+searchItem+"] not found");
+       } else {
+          System.out.println("Item ["+searchItem+"] is in Index => "+search(sortedList,searchItem));
+       }
    }
 
    // Selection Sort
