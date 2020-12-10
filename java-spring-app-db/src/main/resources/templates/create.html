@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create User Record</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+   <div class="container h-100 d-flex justify-content-center">
+      <div class="jumbotron my-auto">
+         <h4 class="display-5">Create Student Record</h4>
+         <div class="alert alert-success" role="alert">
+           <form action="#" th:action="@{/update-data}" th:object="${student}" method="post">
+              <p>Student Reg Number: <input type="text" th:field="*{studentregnum}" /></p>
+              <p>Student First Name: <input type="text" th:field="*{studentfname}" /></p>
+              <p>Student Last Name: <input type="text" th:field="*{studentlname}" /></p>
+              <p>Student Grade: <input type="text" th:field="*{studentgrade}" /></p>
+              <br>
+              <p align="center"><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+           </form>         
+         </div>
+      </div>
+   </div>
+
+</body>
+</html>
