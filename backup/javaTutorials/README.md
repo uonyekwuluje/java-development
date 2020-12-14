@@ -1,11 +1,11 @@
 # My Java Tutorials
 * Create Project: ***Preferred Approach for command line use***
 ```
-mvn archetype:generate -DgroupId=com.javatutorials -DartifactId=javatutorials -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.javaconcepts.app -DartifactId=javaconcepts -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 **NOTE:** If you need a base scaffolding with more batteries included, use this instead:
 ```
-mvn archetype:generate -DgroupId=com.javatutorials -DartifactId=javatutorials -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
 
 * Compile and Execute:
