@@ -29,7 +29,7 @@
            <configuration>
                <archive>
                    <manifest>
-                       <mainClass>com.javatutorials.App</mainClass>
+                       <mainClass>com.javatutorials.MainApp</mainClass>
                    </manifest>
                </archive>
                <descriptorRefs>

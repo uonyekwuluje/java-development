@@ -16,23 +16,19 @@ java -jar target/javaconcepts-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 ## Code Structure
 ```
-.
 ├── pom.xml
 ├── README.md
 └── src
     ├── main
     │   └── java
     │       └── com
-    │           └── javaconcepts
-    │               └── app
-    │                   ├── Intro.java
-    │                   └── PrintDisplay.java
+    │           └── javatutorials
+    │               └── App.java
     └── test
         └── java
             └── com
-                └── javaconcepts
-                    └── app
-                        └── AppTest.java
+                └── javatutorials
+                    └── AppTest.java
 
 11 directories, 5 files
 ```
